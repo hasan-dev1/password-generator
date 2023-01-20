@@ -7,11 +7,13 @@
                 "password":[
                     {
                         "id":101,
-                        "pass":"hi.1233"
+                        "username":"reyal123",
+                        "pass":"reyalvaipro"
                     },
                     {
-                        "id":101,
-                        "pass":"hi.1233"
+                        "id":102,
+                        "username":"reyal123",
+                        "pass":"reyalvaipro"
                     }
                 ]
             },
@@ -19,42 +21,48 @@
                 "id":12,
                 "name":"Facebook",
                 "password":[
-                    {
-                        "id":101,
-                        "pass":"hi.1233"
-                    },
-                    {
-                        "id":101,
-                        "pass":"hi.1233"
-                    }
+                  {
+                    "id": 101,
+                    "username": "reyal123",
+                    "pass": "reyalvaipro"
+                  },
+                  {
+                    "id": 102,
+                    "username": "reyal123",
+                    "pass": "reyalvaipro"
+                  }
                 ]
             },
             {
                 "id":13,
                 "name":"Instagram",
                 "password":[
-                    {
-                        "id":101,
-                        "pass":"hi.1233"
-                    },
-                    {
-                        "id":101,
-                        "pass":"hi.1233"
-                    }
+                  {
+                    "id": 101,
+                    "username": "reyal123",
+                    "pass": "reyalvaipro"
+                  },
+                  {
+                    "id": 102,
+                    "username": "reyal123",
+                    "pass": "reyalvaipro"
+                  }
                 ]
             },
             {
                 "id":14,
                 "name":"Github",
                 "password":[
-                    {
-                        "id":101,
-                        "pass":"hi.1233"
-                    },
-                    {
-                        "id":101,
-                        "pass":"hi.1233"
-                    }
+                  {
+                    "id": 101,
+                    "username": "reyal123",
+                    "pass": "reyalvaipro"
+                  },
+                  {
+                    "id": 102,
+                    "username": "reyal123",
+                    "pass": "reyalvaipro"
+                  }
                 ]
             }
 

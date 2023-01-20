@@ -13,6 +13,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+body{
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
 
 .App-header {
   background-color: #282c34;

@@ -12,12 +12,13 @@ const Home = () => {
   useEffect(()=>{
     if(catid !== 'a'){
       setLoading(true)
-      fetch(`http://localhost:5000/category/${catid}`)
+      fetch(`https://password-server.vercel.app/category/${catid}`)
         .then((res) => res.json())
         .then((data) => {
           setNavdata(data);
           setLoading(false)
-        });
+        })
+        .catch(err => console.log(err.message))
     }
   },[catid])
 
@@ -41,7 +42,7 @@ const Home = () => {
     const bodydata = {id:time, username, pass };
 
 
-    fetch(`http://localhost:5000/category?id=${navdataid}`,{
+    fetch(`https://password-server.vercel.app/category?id=${navdataid}`,{
         method:'PUT',
         headers:{
             'content-type':'application/json'
@@ -51,7 +52,7 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => {
         setLoading(true)
-        fetch(`http://localhost:5000/category/${catid}`)
+        fetch(`https://password-server.vercel.app/category/${catid}`)
           .then((res) => res.json())
           .then((data) => {
             setNavdata(data);
@@ -62,7 +63,7 @@ const Home = () => {
   };
 
   const handledelete = (id) => {
-    fetch(`http://localhost:5000/category/pass?id=${catid}`,{
+    fetch(`https://password-server.vercel.app/category/pass?id=${catid}`,{
       method:'PUT',
       headers:{
         'content-type':'application/json'
@@ -74,7 +75,7 @@ const Home = () => {
 
       if(data.acknowledged === true ){
         setLoading(true);
-        fetch(`http://localhost:5000/category/${catid}`)
+        fetch(`https://password-server.vercel.app/category/${catid}`)
           .then((res) => res.json())
           .then((data) => {
             setNavdata(data);
@@ -141,7 +142,7 @@ const Home = () => {
             ))
           )
         ) : (
-          <div>item Not found</div>
+          <div>Click a category name</div>
         )}
       </div>
 
